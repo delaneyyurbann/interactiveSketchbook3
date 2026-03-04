@@ -1,0 +1,6 @@
+h1 {
+    font-family: "Rubik Glitch Pop", system-ui;
+}
+h2, p {
+    font-family: "Darker Grotesque", sans-serif;
+}

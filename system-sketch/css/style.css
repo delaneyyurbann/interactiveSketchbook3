@@ -1,0 +1,22 @@
+h1{
+    font-family: "futura-pt", sans-serif;
+font-weight: 500;
+font-style: normal;     
+}
+h2{
+    font-family: "futura-pt", sans-serif;
+font-weight: 500;
+font-style: normal;
+font-size: 3em;
+}
+p {
+    font-family: "futura-pt", sans-serif;
+font-weight: 500;
+font-style: normal;
+}
+img{
+    width: 800px;
+    height: auto;
+    transform: rotate(-90deg);
+    margin-left: 200px;
+}

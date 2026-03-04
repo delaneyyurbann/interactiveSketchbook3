@@ -1,0 +1,10 @@
+h1 {
+  font-family: "Rubik Beastly"
+}
+h1 {
+  font-size: 96px;
+  letter-spacing: 0.1em;
+}
+h2, p {
+    font-family: "Darker Grotesque", sans-serif;
+}
