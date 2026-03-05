@@ -4,9 +4,22 @@ function setup() {
   createCanvas(700, 400);
 }
 
+
 function draw() {
   background(220);
+   fill(30, 90, 200);
+  noStroke();
+  circle(width / 2, height / 2 - 20, 350);
 
+fill(0);
+textAlign(CENTER);
+textSize(16);
+text("Click on locations on the globe to go on an adventure!", width / 2, 25);
+
+textSize(14);
+text("Each new city unlocks a travel fact.", width / 2, 45);
+
+textAlign(LEFT); 
   
   fill(200, 0, 0);
   rect(100, 150, 50, 50);   // Paris
