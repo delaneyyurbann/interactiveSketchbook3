@@ -11,7 +11,7 @@ const dots = [
 ];
 
 function preload() {
-  globeImg = loadImage("img/earth.png"); 
+  globeImg = loadImage("img/earth.png");
 }
 
 function setup() {
@@ -77,16 +77,21 @@ function mousePressed() {
     let py = gy + d.y;
 
     if (dist(mouseX, mouseY, px, py) < 14) {
-      currentFact = d.name + ": " + d.fact;
 
+      // unlock if new
       if (!d.unlocked) {
         d.unlocked = true;
         unlockedCount++;
       }
 
+      // show fact first
+      currentFact = d.name + ": " + d.fact;
+
+      // if that click completed everything, append the congrats
       if (unlockedCount === dots.length) {
-        currentFact = "All cities unlocked — you became a star! ⭐";
+        currentFact += "\n\nAll cities unlocked — you became a star! ⭐";
       }
+
       return;
     }
   }
