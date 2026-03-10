@@ -5,8 +5,8 @@ let unlockedCount = 0;
 const dots = [
   { name: "Paris",  x: 10, y: -140, fact: "The Eiffel Tower expands slightly in summer heat.", unlocked: false },
   { name: "Tangier",  x:  -10,  y: -90, fact: "On a clear day in Tangier, you can see Europe from Africa, Spain is only 9 miles away across the Strait of Gibraltar.", unlocked: false },
-  { name: "Cairo",  x:  60,  y: -70, fact: "The Great Pyramid was tallest for ~3,800 years.", unlocked: false },
-  { name: "Rio",    x: -50,  y:  120, fact: "Christ the Redeemer stands over Rio.", unlocked: false },
+  { name: "Cairo",  x:  60,  y: -70, fact: "The pyramids near Cairo were already ancient when Cleopatra was alive.", unlocked: false },
+  { name: "Rio",    x: -50,  y:  120, fact: "Rio’s Christ the Redeemer statue is struck by lightning several times a year.", unlocked: false },
   { name: "Mumbai", x: 130,  y:  -30, fact: "Mumbai is home to Bollywood, the largest film industry in the world by number of films produced.", unlocked: false },
 ];
 
