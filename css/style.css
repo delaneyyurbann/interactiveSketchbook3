@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: rgb(190, 255, 160);
+  color: #137e00; /* neon green text */
+}
+
+/* NAV BAR */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 15px;
+  background: rgb(190, 255, 160);
+  border-bottom: 2px solid #39ff14;
+}
+
+/* BUTTON STYLE LINKS */
+.navbar a {
+  text-decoration: none;
+  color: #39ff14;
+  border: 2px solid #39ff14;
+  padding: 8px 12px;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+/* HOVER EFFECT */
+.navbar a:hover {
+  background: #39ff14;
+  color: black;
+}
+
+/* TITLE */
+h1 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 36px;
+}
