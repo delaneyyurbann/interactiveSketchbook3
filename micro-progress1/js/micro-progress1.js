@@ -12,6 +12,8 @@ const dots = [
   { name: "Bogotá", x: -220, y: 10, fact: "Bogotá sits over 8,600 feet above sea level, making it one of the highest capital cities in the world.", unlocked: false },
   { name: "Ghana",  x:  -10,  y: -10, fact: "Ghana was formerly known as the Gold Coast, and it remains one of Africa’s top gold producers.", unlocked: false },
   { name: "Istanbul",  x: 80,  y: -160, fact: "Istanbul is the only city in the world located on two continents.", unlocked: false },
+  { name: "Cape Town",  x: 80,  y: 150, fact: "Cape Town is historically known as a premier global Great White Shark hotspot, but in recent years these apex predators have largely vanished from the area.", unlocked: false },
+
 
 ];
 
