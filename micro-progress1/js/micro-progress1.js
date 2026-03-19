@@ -10,6 +10,9 @@ const dots = [
   { name: "Rio",    x: -80,  y:  120, fact: "Rio’s Christ the Redeemer statue is struck by lightning several times a year.", unlocked: false },
   { name: "Mumbai", x: 240,  y:  -70, fact: "Mumbai is home to Bollywood, the largest film industry in the world by number of films produced.", unlocked: false },
   { name: "Bogotá", x: -220, y: 10, fact: "Bogotá sits over 8,600 feet above sea level, making it one of the highest capital cities in the world.", unlocked: false },
+  { name: "Ghana",  x:  -10,  y: -10, fact: "Ghana was formerly known as the Gold Coast, and it remains one of Africa’s top gold producers.", unlocked: false },
+  { name: "Istanbul",  x: 80,  y: -160, fact: "Istanbul is the only city in the world located on two continents.", unlocked: false },
+
 ];
 
 function preload() {
@@ -97,7 +100,7 @@ function mousePressed() {
       // show fact first
       currentFact = d.name + ": " + d.fact;
 
-      // if that click completed everything, append the congrats
+      // if that click completed everything
       if (unlockedCount === dots.length) {
         currentFact += "\n\nAll cities unlocked — you became a star! ⭐";
       }
