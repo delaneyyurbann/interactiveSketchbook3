@@ -1,0 +1,10 @@
+h2, p {
+    font-family: "Darker Grotesque", sans-serif;
+}
+
+h1{
+    font-family: "Rock 3D", system-ui;
+    font-size: 6em;
+    margin-bottom: 0.1em;
+    margin-top: 0.1em;
+}
