@@ -1,0 +1,16 @@
+img {
+
+}
+[src$=".jpg"],
+[src$=".jpeg"],
+[src$=".png"],
+[src$=".gif"],
+[src$=".webp"],
+[src^="data:"] {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    max-height: 100vh;
+    object-fit: contain;
+}
