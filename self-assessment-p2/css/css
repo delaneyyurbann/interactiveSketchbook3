@@ -1,6 +1,4 @@
-img {
-
-}
+img {}
 [src$=".jpg"],
 [src$=".jpeg"],
 [src$=".png"],
