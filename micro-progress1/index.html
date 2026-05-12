@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Micro Project</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://use.typekit.net/mhg1aha.css">
+
+  <!-- p5 -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+    }
+
+    header {
+      background: #bfbfbf;
+      padding: 20px;
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    /* ✅ FIXED NAV */
+    nav {
+      position: relative;
+      height: 42px;
+      border-bottom: 1px solid #ccc;
+      background: white;
+      font-size: 14px;
+    }
+
+    .nav-left {
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .nav-center {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      gap: 35px;
+    }
+
+    .nav-right {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .layout {
+      display: flex;
+    }
+
+    aside {
+      width: 180px;
+      background: #e0e0e0;
+      padding: 20px;
+      min-height: 100vh;
+      line-height: 2;
+    }
+
+    main {
+      flex: 1;
+      padding: 40px;
+      background: white;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      font-size: 16px;
+      font-weight: normal;
+      color: #666;
+      margin-top: 0;
+    }
+
+    .section {
+      margin-top: 40px;
+    }
+
+    .box {
+      background: #e5e5e5;
+      padding: 15px;
+      margin-top: 10px;
+    }
+
+    #game-container {
+      margin-top: 20px;
+      width: 100%;
+      max-width: 700px;
+    }
+
+    .restart {
+      margin-top: 20px;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>DELANEY'S INTERACTIVE SKETCHBOOK</header>
+
+  <!-- ✅ UPDATED NAV STRUCTURE -->
+  <nav>
+    <div class="nav-left">menu</div>
+
+    <div class="nav-center">
+      <span>home</span>
+      <span><strong>game</strong></span>
+      <span>sketches</span>
+    </div>
+
+    <div class="nav-right">go back</div>
+  </nav>
+
+  <div class="layout">
+
+    <aside>
+      sketch 1<br>
+      sketch 2<br>
+      sketch 3<br>
+      sketch 4<br>
+      sketch 5<br>
+      sketch 6<br>
+      reflections<br>
+      <strong>micro-project</strong>
+    </aside>
+
+    <main>
+      <h1>AROUND THE WORLD GAME</h1>
+      <h2>micro-project</h2>
+
+      <div class="section">
+        <strong>instructions:</strong>
+        <div class="box">
+          Click locations on the globe to unlock travel facts. Visit all locations to complete your journey.
+        </div>
+      </div>
+
+      <div class="section">
+        <strong>interaction:</strong>
+
+        <div id="game-container"></div>
+      </div>
+
+      <div class="restart" onclick="restartGame()">start over</div>
+    </main>
+
+  </div>
+
+  <!-- your p5 sketch -->
+  <script src="js/micro-progress1.js"></script>
+
+</body>
+</html>

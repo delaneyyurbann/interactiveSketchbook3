@@ -1,26 +1,144 @@
-h1{
-    font-family: "futura-pt", sans-serif;
-font-weight: 500;
-font-style: normal;     
-}
-h2{
-    font-family: "futura-pt", sans-serif;
-font-weight: 500;
-font-style: normal;
-font-size: 3em;
-}
-p {
-    font-family: "futura-pt", sans-serif;
-font-weight: 500;
-font-style: normal;
-}
+/* BASE */
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
-  overflow: hidden;
+  background: #F5F3D8;
+  font-family: "futura-pt", sans-serif;
+}
+
+/* HEADER */
+header {
+  background: #1D2A62;
+  color: #F5F3D8;
+  padding: 28px 40px;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+/* NAV */
+nav {
+  position: relative;
+  height: 50px;
+  background: #87AECE;
+  border-bottom: 2px solid #1D2A62;
+  font-size: 15px;
+  color: #1D2A62;
+}
+
+.nav-left,
+.nav-center,
+.nav-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav-left { left: 30px; }
+
+.nav-center {
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 40px;
+}
+
+.nav-right { right: 30px; }
+
+nav span,
+.nav-left,
+.nav-right {
+  cursor: pointer;
+}
+
+nav span:hover,
+.nav-left:hover,
+.nav-right:hover {
+  color: #437118;
+}
+
+/* LAYOUT */
+.layout {
+  display: flex;
+}
+
+/* SIDEBAR */
+aside {
+  width: 190px;
+  background: #AFD06E;
+  padding: 28px 22px;
+  min-height: 100vh;
+  line-height: 2.1;
+  color: #1D2A62;
+}
+
+aside strong {
+  color: #437118;
+  font-weight: 700;
+}
+
+/* MAIN */
+main {
+  flex: 1;
+  padding: 55px;
+  background: #F5F3D8;
+}
+
+/* HEADINGS */
+h1 {
+  font-size: 34px;
+  margin-bottom: 4px;
+  color: #1D2A62;
+}
+
+h2 {
+  font-size: 18px;
+  margin-top: 0;
+  color: #437118;
+}
+
+/* SECTIONS */
+.section {
+  margin-top: 40px;
+}
+
+/* CARDS / BOXES */
+.box {
+  background: #AFD06E;
+  padding: 18px 22px;
+  margin-top: 12px;
+  border-radius: 16px;
+  border: 2px solid #437118;
+  color: #1D2A62;
+}
+
+/* GAME CONTAINER */
+#game-container {
+  margin-top: 20px;
+  width: fit-content;
+  max-width: 100%;
+  padding: 14px;
+  background: #87AECE;
+  border-radius: 20px;
+  border: 3px solid #1D2A62;
 }
 
 canvas {
   display: block;
+  border-radius: 14px;
+}
+
+/* BUTTON */
+.restart {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 10px 18px;
+  background: #437118;
+  color: #F5F3D8;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.restart:hover {
+  background: #1D2A62;
 }
